@@ -1,6 +1,6 @@
 using System;
 
-namespace S2;
+namespace S2
 {
 	public class Solution
 	{
@@ -12,7 +12,7 @@ namespace S2;
 	      
 	      if (matchingIndex > -1) {
 	          int[] indices = {index, matchingIndex};
-	          return indices
+	          return indices;
 	      }
 	      else {
 	        index += 1;

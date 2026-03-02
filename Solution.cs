@@ -21,12 +21,15 @@ namespace S2
 	  
 	  public int[] TwoSum() {
 		  int index = 0;
-		  int nums = {2, 7, 11, 15};
+		  int[] nums = {2, 7, 11, 15};
 		  int target = 9;
 		  int[] arrayIndices = subtract(nums, target, index);
 		  return arrayIndices;
 	  }
 
-	  System.out.println(TwoSum());
+	  // not included in LeetCode solution
+	  int indices = TwoSum();
+	  System.out.println(indices[0]);
+	  System.out.println(indices[1]);
 	}
 }

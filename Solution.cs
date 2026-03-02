@@ -5,9 +5,6 @@ namespace S2;
 	public class Solution
 	{
 	  
-	  private int[] nums;
-	  private int target;
-	  
 	  public int[] subtract(int[] nums, int target, int index) {
 	      int difference = target - nums[index];
 	      
@@ -22,21 +19,14 @@ namespace S2;
 	      }
 	  }
 	  
-	  public Solution() {
-	      nums = {};
-	      target = 0;
+	  public int[] TwoSum() {
+		  int index = 0;
+		  int nums = {2, 7, 11, 15};
+		  int target = 9;
+		  int[] arrayIndices = subtract(nums, target, index);
+		  return arrayIndices;
 	  }
-	  
-	  public Solution(int[] inputNums, int inputTarget) {
-	      this.nums = inputNums;
-	      this.target = inputTarget;
-	  }
-	  
-		public int[] TwoSum()
-		{
-		    int index = 0;
-		    int[] arrayIndices = subtract(this.nums, this.target, index);
-		    return arrayIndices;
-		}
+
+	  System.out.println(TwoSum());
 	}
 }
